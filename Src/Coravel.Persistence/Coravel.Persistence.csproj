@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Coravel.Persistence</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>James Hickey</Authors>
+    <Company>-</Company>
+    <Title>Coravel.Persistence</Title>
+    <Description>Persistent Jobs and Scheduler for Coravel using Entity Framework Core. Provides database-backed job queuing and scheduling with at-least-once execution guarantees.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jamesmh/coravel</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jamesmh/coravel</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>netcore;scheduling;coravel;queuing;scheduler;persistence;efcore;jobs</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>embedded</DebugType>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Coravel\Coravel.csproj" />
+  </ItemGroup>
+</Project>
